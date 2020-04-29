@@ -55,15 +55,15 @@ def test_zomato_get_cities_endpoint_for_newyork():
 
 
 @pytest.mark.ZomatoTC_003
-@pytest.mark.parametrize("cityname,status_code",
+@pytest.mark.parametrize("cityname,status_code,status",
                          [
-                             ('Bengaluru', 200),
-                             ('Sydney', 200),
-                             ('warsaw', 200),
-                             ('Istanbul', 200)
+                             ('Bengaluru', 200, 'success'),
+                             ('Sydney', 200, 'success'),
+                             ('warsaw', 200, 'success'),
+                             ('Istanbul', 200, 'success')
                          ]
                          )
-def test_zomato_get_cities_endpoint_for_multiple_cities(cityname, status_code):
+def test_zomato_get_cities_endpoint_for_multiple_cities(cityname, status_code, status, ):
     """ Verify GET End Point 'Cities' is working as expected when city name is given in parameterized format """
 
     zomato_get_cities_endpoint = 'https://developers.zomato.com/api/v2.1/cities?q={}'.format(cityname)
@@ -73,7 +73,7 @@ def test_zomato_get_cities_endpoint_for_multiple_cities(cityname, status_code):
     response = (rp.json())
 
     assert rp.status_code == status_code
-    assert response['status'] == 'success'
+    assert response['status'] == status
     assert response['user_has_addresses'] is True
 
 
