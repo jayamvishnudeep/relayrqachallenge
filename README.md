@@ -8,7 +8,7 @@ I have used below mentioned public API's
 <ul>
   <li><b>Zomato Public API</b> - Only GET request method is exposed to Public and I used <b>GET Cities</b> api request. The API key must be given to the request headers and I haven't removed it from the Code as it's Public! You can find about the API deatils here https://developers.zomato.com/documentation#!/common/cities</li>
  
-  <li><b>Reqres.in Public API<b/> - All the CRUD request methods are exposed to public without any authentication and so I used it to perform api tests. You can find about the API deatils here https://reqres.in/ </li> 
+  <li><b>Reqres.in Public API</b> - All the CRUD request methods are exposed to public without any authentication and so I used it to perform api tests. You can find about the API deatils here https://reqres.in/ </li> 
 </ul>
 
 ## Technologies/Frameworks used:
