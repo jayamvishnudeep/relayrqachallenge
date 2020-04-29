@@ -1,7 +1,7 @@
 # relayrqachallenge
 
 ## Overview
-API Tests for Zomato public api & Reqres API (https://reqres.in/)
+API Tests for Zomato public api & Reqres API (https://reqres.in/) with pytest as a framework
 
 ## Technologies/Frameworks used:
 
