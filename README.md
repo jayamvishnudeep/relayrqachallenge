@@ -32,4 +32,4 @@ I have used below mentioned public API's
 </ul>
 
 ## How to run?
-Go to the IDE terminal and use ``` pytest api-testing``` command to run all the api tests
+Clone this git repository and then go to the IDE terminal and use ``` pytest api-testing``` command and all the api tests will run
