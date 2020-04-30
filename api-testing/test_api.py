@@ -47,9 +47,9 @@ def test_zomato_get_cities_endpoint_for_newyork():
                'country_flag_url'] == 'https://b.zmtcdn.com/images/countries/flags/country_216.png'
     assert response['location_suggestions'][0]['state_name'] == 'New York State'
     assert response['location_suggestions'][0]['state_code'] == 'NY'
-    assert response['location_suggestions'][2]['id'] == 5188
-    assert response['location_suggestions'][2]['name'] == 'New York, IL'
-    assert response['location_suggestions'][2]['state_name'] == 'Illinois'
+    assert response['location_suggestions'][2]['id'] == 6671
+    assert response['location_suggestions'][2]['name'] == 'New York Mills, MN'
+    assert response['location_suggestions'][2]['state_name'] == 'Minnesota'
     assert response['status'] == 'success'
     assert response['user_has_addresses'] is True
 
